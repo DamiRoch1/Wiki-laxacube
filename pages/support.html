@@ -1,24 +1,45 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Home | Support </title>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="shortcut icon" href="./img/laxapourlonglet.png" />
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/support.css">
+    <link rel="shortcut icon" href="/img/laxapourlonglet.png" />
 </head>
 <body>
     <head>
 
-        <nav>
-
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/pages/faq.html">FAQ</a></li>
-                <li><a href="/pages/support.html">Support</a></li>
-            </ul>
-
-        </nav>
+        <div class="dropdown">
+            <button class="dropdown-button"><img class="img2"
+              src="/img/laxapourlonglet.png"
+              alt="img CBI BY Lael"
+          /></button>
+            <div class="dropdown-content">
+              <a href="/index.html">Home</a>
+              <a href="/pages/faq.html">FAQ</a>
+              <a href="/pages/support.html">Support</a>
+            </div>
+          </div>
     </head>
+    <main>
+        <div class="center">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <h3 class="in1">Support <hr></h3>
+                <input type="hidden" name="access_key" value="4d5b49e0-ae05-4705-968a-ad6b4cfe0fca" class="in2"> 
+                <input type="email" name="email" required placeholder="Email" class="in2"> 
+                <input type="text" name="First Name" required placeholder="Nom" class="in2"> 
+                <input type="text" name="Player Name" required placeholder="Player name" class="in2">
+                <textarea name="message" cols="30" rows="10" required placeholder="describe to me your problem or your question in as much detail as possible" class="in3" ></textarea>
+                <div class="h-captcha" data-captcha="true" ></div>
+                <button type="submit" class="btn1">SUBMIT</button>
+    
+            </form>
+            <script src="https://web3forms.com/client/script.js" async defer></script>
+    
+        </div>
+    </main>
 </body>
-</html>
+</html> 

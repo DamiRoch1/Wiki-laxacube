@@ -2,10 +2,11 @@
     padding: 0;
     margin: 0;
 }
-
-:root{
-    --bkc: #252838;
-}
 body{
     background-color: var(--bkc);
+}
+:root{
+    --bkc: #252838;
+    --navc: #3d425e;
+    --rad: 8px
 }
